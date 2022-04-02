@@ -17,8 +17,7 @@ body {
 }
 
 .needles {
-  width: 7em;
-  border: solid 4px #778da9;
+  border: solid 2px #778da9;
 
   position: absolute;
   top: 50%;
@@ -26,4 +25,30 @@ body {
 
   transform: rotate(90deg);
   transform-origin: 100%;
+}
+
+.seconds {
+  width: 6em;
+  border: solid 1px #778da9;
+}
+
+.minutes {
+  width: 6em;
+  border: solid 2px #76c893;
+}
+
+.hours {
+  width: 5em;
+  border: solid 3px #d9ed92;
+}
+
+.center {
+  width: 0.1em;
+  border: solid 5px #415a77;
+
+  position: absolute;
+  top: 47%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  border-radius: 50%;
 }
