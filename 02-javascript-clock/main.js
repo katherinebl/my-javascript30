@@ -12,11 +12,11 @@ function setDate() {
   secondNeedle.style.transform = `rotate(${secondsDegrees}deg)`;
 
   const minutes = now.getMinutes();
-  const minutesDegrees = (minutes / 60) * 360;
+  const minutesDegrees = (minutes / 60) * 360 + 90;
   minutesNeedle.style.transform = `rotate(${minutesDegrees}deg)`;
 
   const hours = now.getHours();
-  const hoursDegrees = (hours / 12) * 360;
+  const hoursDegrees = (hours / 12) * 360 + 90;
   hourNeedle.style.transform = `rotate(${hoursDegrees}deg)`;
 
   console.log(
