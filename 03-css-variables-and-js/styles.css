@@ -1,0 +1,19 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  background-color: #ebeff3;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 30em;
+  height: auto;
+  display: block;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
