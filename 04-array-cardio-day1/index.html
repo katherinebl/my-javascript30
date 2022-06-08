@@ -54,6 +54,14 @@
     const yearsPerInventor = inventors.map(inventor => inventor.passed - inventor.year)
 
     const totalYearsLivedTogether = yearsPerInventor.reduce((prev, curr) => prev + curr);
+    //console.table(totalYearsLivedTogether)
+
+    //Another way to do it:
+    const totalYears = inventors.reduce((total, inventor) => {
+      return total + (inventor.passed - inventor.year);
+    }, 0);
+
+    //console.log(totalYears);
 
     // 5. Sort the inventors by years lived
     const oldest = inventors.sort((a, b) => {
@@ -61,11 +69,10 @@
       nextInventor = b.passed - b.year;
       return (prevInventor > nextInventor) ? -1 : 1;
     })
-    console.table(oldest);
+    //console.table(oldest);
 
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
-
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
